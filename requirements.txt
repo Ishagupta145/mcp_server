@@ -1,0 +1,16 @@
+# Server
+fastapi
+uvicorn[standard]
+
+# Crypto Data
+ccxt
+
+# Utilities
+cachetools
+pydantic-settings
+
+# Testing
+pytest
+pytest-asyncio
+pytest-mock
+httpx
