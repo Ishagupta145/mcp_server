@@ -25,6 +25,13 @@ class OHLCVResponse(BaseModel):
     volume: float
 
     class Config:
+        """
+        Pydantic model configuration.
+        """
         # Allows creating the model from a list, e.g., [timestamp, o, h, l, c, v]
         # This is commented out as we will map it manually in the endpoint.
-        # orm_mode = True
+        # In Pydantic v2, this would be:
+        # from_attributes = True
+        
+        # This 'pass' statement fixes the IndentationError.
+        pass
